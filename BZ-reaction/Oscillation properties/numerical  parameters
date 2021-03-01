@@ -1,1 +1,11 @@
+Fourier transform_multiprocessing.py
+This is essentially the same as Fourier transform.py, except that multiprocessing is used to compute the stability values more efficiently. In addition, only the parameter configurations
+below the Hopf bifurcation plane are considered.
+  Solver: LSODA from the FORTRAN library odepack (ODE in an explicit form/ switches automatically between stiff and nonstiff methods)
+  Simulation time: 100 sec
+  Time step: 0.001 sec
+  3-D grid in parameter space: 50x50x50
+  Random initial condition tester per parameter configuration: 50
 
+Fourier_plotter.py
+The output from the simulation was stored in an excel file. The values were then plotted in form of a 3-D volume plot.
