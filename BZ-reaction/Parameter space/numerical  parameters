@@ -1,2 +1,5 @@
-3-D grid in parameter space: 300x300x100
-Parameter were 
+Parameter space.py
+3-D grid in parameter space is iterated: 300x300x100 (can be seen from np.linspace() in for loops)
+Parameter configurations where the eigenvalues are close to the imaginary axis are appended
+
+Parameter
