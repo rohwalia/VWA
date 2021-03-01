@@ -28,51 +28,6 @@ def eigenvalue_calc(k_5, f, A):
 
 
 previous = 0
-result_f=[]
-for f in np.linspace(0, 2.5, 100):
-    eigenvalue_calc(1, f, 1)
-    for i in eigenvalues:
-        result_f.append([f, i.real, i.imag])
-"""fig1 = plt.figure()
-ax = fig1.gca(projection='3d')
-ax.set_xlabel('real')
-ax.set_ylabel('imag')
-ax.set_zlabel('f')
-result_f = np.array(result_f)
-#print(result_f)
-ax.scatter(result_f[:,1], result_f[:,2], result_f[:,0])
-plt.show()"""
-
-result_k=[]
-for k_5 in np.linspace(0.01, 25, 100):
-    eigenvalue_calc(k_5, 0.5, 1)
-    for i in eigenvalues:
-        result_k.append([k_5, i.real, i.imag])
-"""fig1 = plt.figure()
-ax = fig1.gca(projection='3d')
-ax.set_xlabel('real')
-ax.set_ylabel('imag')
-ax.set_zlabel('k_5')
-result_k = np.array(result_k)
-#print(result_k)
-ax.scatter(result_k[:,1], result_k[:,2], result_k[:,0])
-plt.show()"""
-
-result_A=[]
-for A in np.linspace(0, 1.2, 100):
-    eigenvalue_calc(1, 0.5, A)
-    for i in eigenvalues:
-        result_A.append([A, i.real, i.imag])
-"""fig1 = plt.figure()
-ax = fig1.gca(projection='3d')
-ax.set_xlabel('real')
-ax.set_ylabel('imag')
-ax.set_zlabel('A')
-result_A = np.array(result_A)
-#print(result_A)
-ax.scatter(result_A[:,1], result_A[:,2], result_A[:,0])
-plt.show()"""
-
 result_tot=[]
 tol = 0.001
 tol_A = 0.02
