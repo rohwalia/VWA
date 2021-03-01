@@ -97,12 +97,3 @@ print(stability)
 toc = time.perf_counter()
 print(toc-tic)
 
-"""fig = plt.figure()
-ax = fig.gca(projection='3d')
-ax.set_xlabel('f')
-ax.set_ylabel('[A]')
-ax.set_zlabel('k_5')
-ax.plot_trisurf(stability[:,0], stability[:,1], stability[:,2], cmap=plt.cm.jet, linewidth=0.2)
-plt.show()"""
-
-
