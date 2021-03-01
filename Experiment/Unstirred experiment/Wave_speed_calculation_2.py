@@ -66,22 +66,6 @@ t = np.array(t)
 print(sum(distance_graph) / len(distance_graph))
 print(sum(distance_graph_filtered)/len(distance_graph_filtered))
 
-"""up = 0
-fft = fftpack.fft(distance_graph)
-freqs = fftpack.fftfreq(distance_graph.size, d=dt)
-power = np.abs(fft)[np.where(freqs > up)]
-freqs = freqs[np.where(freqs > up)]
-print(freqs[power.argmax()])
-peaks, _ = find_peaks(distance_graph, height=0, distance = 3*dt)
-average_frequency = []
-j =0
-while j<len(peaks)-1:
-    average_frequency.append(1/(t[j+1]-t[j]))
-    j = j+1
-print(sum(average_frequency)/len(average_frequency))
-print(t[peaks])
-print(peaks)"""
-
 data = pd.DataFrame(list(zip(t, distance_graph)), columns=["Time", "Diffusion rate"])
 data2 = pd.DataFrame(list(zip(t_filtered, distance_graph_filtered)), columns=["Time", "Diffusion rate"])
 with pd.ExcelWriter('Videos.xlsx') as writer:
@@ -93,5 +77,3 @@ with pd.ExcelWriter('Videos.xlsx') as writer:
     worksheet.write(0, 12, "Frequency")
     worksheet.insert_image(3, 12, "distance_graph.png")
     worksheet.insert_image(3, 20, "distance_graph_filtered.png")
-    #worksheet.write(1, 12, freqs[power.argmax()])
-    #worksheet.write(1, 13, sum(average_frequency)/len(average_frequency))
