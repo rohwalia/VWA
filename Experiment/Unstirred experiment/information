@@ -1,1 +1,4 @@
-
+To analyse chemical waves in the Petri dish, first Canny_algorithm_waves_2.py is used to obtain the edges for each frame. Then using Wave_speed_calculation_2.py the edges are
+tracked and the diffusion rate obtained. With this the pixel distance between chemical waves is estimated and the frequency can be calculated.
+RGB_analysis_waves.py was the first version of the edge detection code only relying on the RGB-values. It was abandoned, since it was a bit ineffective and the Canny algorithm
+proved to be far superior.
