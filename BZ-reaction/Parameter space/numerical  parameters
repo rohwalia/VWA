@@ -1,6 +1,7 @@
 Parameter space.py
 3-D grid in parameter space is iterated: 300x300x100 (can be seen from np.linspace() in for loops)
-Parameter configurations where the eigenvalues (obtained from function "eigenvalue_calc") are close to the imaginary axis are appended and then exported to the excel file "Hopf.xlsx"
+Parameter configurations where the eigenvalues (obtained from function "eigenvalue_calc") are close to the imaginary axis are appended
+and then exported to the excel file "Hopf.xlsx"
 
 Parameter space_plotter.py
 Plots the values extracted from "Hopf.xlsx" first as a scatter plot then as a triangulated surface
