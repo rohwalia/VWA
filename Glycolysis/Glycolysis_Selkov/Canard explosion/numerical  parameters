@@ -1,1 +1,9 @@
-
+Infinite_limitcycle_estimation.py
+The aim was to check if the limit cycle was approaching infinity and numerically obtain the approximate border between infinite and finite limit cycles. If the limit cycle did 10
+revolutions in the simulation it was considered finite.
+  Solver: LSODA from the FORTRAN library odepack (ODE in an explicit form/ switches automatically between stiff and nonstiff methods)
+  Simulation time: 1000 sec
+  Time step: 0.001 sec
+  3-D grid in parameter space: 100x100
+  Random initial condition tested per parameter configuration: 3
+The parameter configurations with finite limit cycles were exported in an excel file and plotted with Infinite_plotter.py
