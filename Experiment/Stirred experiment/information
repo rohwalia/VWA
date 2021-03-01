@@ -1,1 +1,2 @@
-
+With this code the periodic colour change in the BZ-reaction can be analysed in the stirred beaker experiment. The output is an excel file where graphs of RGB over time and FFT
+are automatically plotted.
