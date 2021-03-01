@@ -6,7 +6,7 @@ configurations below the Hopf bifurcation plane are considered.
   Simulation time: 100 sec
   Time step: 0.01 sec
   3-D grid in parameter space: 14x14x14
-  Random initial condition tested per parameter configuration: 50
+  Random initial condition tested per parameter configuration: 20
 
 Lyapunov_plotter.py
 The output from the simulation was stored in an excel file. The values were then plotted in form of a 3-D volume plot.
