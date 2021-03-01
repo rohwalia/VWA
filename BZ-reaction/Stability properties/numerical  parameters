@@ -6,7 +6,7 @@ below the Hopf bifurcation plane are considered.
   Simulation time: 100 sec
   Time step: 0.001 sec
   3-D grid in parameter space: 50x50x50
-  Random initial condition tester per parameter configuration: 20
+  Random initial condition tested per parameter configuration: 20
 
 Poincare_plotter.py
 The output from the simulation was stored in an excel file. The values were then plotted in form of a 3-D volume plot.
